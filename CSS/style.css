@@ -1,0 +1,133 @@
+/* Color Palette Variables & Bootstrap Overrides */
+:root {
+    --bg-primary: #0F172A;
+    --bg-secondary: #111827;
+    --accent: #3B82F6;
+    --accent-light: #60A5FA;
+    --text-slate: #94A3B8;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: #F8FAFC;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Color Classes */
+.bg-bgPrimary { background-color: var(--bg-primary) !important; }
+.bg-bgSecondary { background-color: var(--bg-secondary) !important; }
+.text-slate { color: var(--text-slate) !important; }
+.text-primary-light { color: var(--accent-light) !important; }
+.border-slate-700 { border-color: #334155 !important; }
+.border-slate-800 { border-color: #1E293B !important; }
+
+
+/* Apply Plus Jakarta Sans to headings */
+h1, h2, h3, h4, h5, h6, .display-3, .display-5 {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    letter-spacing: -0.04em; /* Tightens characters like the image */
+}
+
+/* Ensure ultra-bold weight */
+.fw-extrabold {
+    font-weight: 800 !important;
+}
+
+
+
+
+
+/* Custom Typography Utilities */
+.x-small { font-size: 0.75rem; }
+.font-semibold {
+     font-weight: 600; }
+.font-bold { 
+    font-weight: 800; }
+.font-extrabold { 
+    font-weight: 800; }
+.tracking-widest {
+     letter-spacing: 0.15em; }
+
+/* Custom Button Overrides */
+.btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+.btn-primary:hover {
+    background-color: var(--accent-light);
+    border-color: var(--accent-light);
+}
+.btn-dark-custom {
+    background-color: var(--bg-secondary);
+    color: #F8FAFC;
+}
+.btn-dark-custom:hover {
+    background-color: #1E293B;
+    color: #FFF;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+    background: rgba(17, 24, 39, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.glass-modal {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(16px);
+}
+
+/* Header Adjustments */
+header#header.header-scrolled {
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Divider */
+.divider {
+    width: 80px;
+    height: 4px;
+}
+
+/* Layout Dimensions */
+.avatar-circle {
+    width: 340px;
+    height: 340px;
+}
+.icon-box, .contact-icon-box {
+    width: 48px;
+    height: 48px;
+}
+.project-img-wrapper {
+    height: 200px;
+}
+
+/* Project Hover Overlay */
+.project-overlay {
+    background: rgba(15, 23, 42, 0.75);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.project-img-wrapper:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Timeline Custom Nodes */
+.timeline-node {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    left: -32px;
+    top: 24px;
+    border: 3px solid var(--bg-primary);
+}
+
+/* Custom Hover Effects */
+.hover-white:hover { color: #FFF !important; }
+.hover-primary:hover { color: var(--accent) !important; }
+
+

@@ -1,0 +1,1369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of ICE Student & Software Engineer specializing in modern web development and networking systems."
+    />
+    <meta name="author" content="ICE Undergraduate @ BUP" />
+    <title>MyPortfolio | ICE & Software Engineering</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local Bootstrap 5.3.3 CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-offset="100">
+    <!-- Header / Navbar -->
+    <header id="header" class="fixed-top transition-all">
+      <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+          <!-- Brand Logo -->
+          <a
+            class="navbar-brand fw-bold d-flex items-center gap-1"
+            href="#hero"
+          >
+            <span class="text-primary font-black">&lt;</span>
+            <span>ICE<span class="text-primary">.</span>Dev</span>
+            <span class="text-primary font-black">/&gt;</span>
+          </a>
+
+          <!-- Mobile Offcanvas Toggler -->
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered text-light fs-4"></i>
+          </button>
+
+          <!-- Desktop & Offcanvas Navigation -->
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header border-bottom border-secondary">
+              <h5
+                class="offcanvas-title text-white fw-bold"
+                id="offcanvasNavbarLabel"
+              >
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav ms-auto align-items-lg-center gap-lg-3 gap-2"
+              >
+                <li class="nav-item">
+                  <a class="nav-link text-slate" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-slate" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-slate" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-slate" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-slate" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item mt-3 mt-lg-0">
+                  <a
+                    href="assets/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-primary btn-sm px-3 fw-semibold"
+                  >
+                    <i class="fa-solid fa-file-arrow-down me-1"></i> Resume
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section
+        id="hero"
+        class="min-vh-100 d-flex align-items-center bg-bgPrimary position-relative"
+      >
+        <div class="container py-5 mt-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-8 text-center text-lg-start" data-aos="fade-up">
+              <span
+                class="badge rounded-pill bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 mb-4"
+              >
+                Available for Internships & Collaborations
+              </span>
+
+              <h1 class="display-3 fw-extrabold text-white mb-4">
+                I'm <span class="text-primary-light">Kai Minhajul Islam</span>.
+                <br />
+                A <span id="typed" class="text-light"></span>
+              </h1>
+
+              <p class="lead text-slate max-w-2xl mb-5 mx-auto mx-lg-0">
+                Information & Communication Engineering (ICE) Undergraduate at
+                Bangladesh University of Professionals (BUP). Bridging the gap
+                between complex hardware systems and modern software
+                architecture.
+              </p>
+
+              <div
+                class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start gap-3"
+              >
+                <a
+                  href="#projects"
+                  class="btn btn-primary btn-lg px-4 fs-6 fw-semibold shadow-sm"
+                >
+                  View My Projects <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+                <a
+                  href="assets/resume.pdf"
+                  target="_blank"
+                  class="btn btn-dark-custom btn-lg px-4 fs-6 fw-semibold border border-slate-700"
+                >
+                  Get Digital Resume
+                </a>
+
+                <div
+                  class="vr bg-secondary d-none d-lg-block mx-2 opacity-50"
+                  style="height: 35px"
+                ></div>
+
+                <div
+                  class="d-flex align-items-center gap-3 fs-5 text-slate ms-lg-2"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/kazi-minhajul-islam-6ba52621a/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    class="text-slate hover-white"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://github.com/kaziratul3200"
+                    target="_blank"
+                    aria-label="GitHub"
+                    class="text-slate hover-white"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    href="mailto:kaziratul3100@gmail.com"
+                    aria-label="Email"
+                    class="text-slate hover-white"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!--profile image-->
+
+            <div
+              class="col-lg-4 d-flex justify-content-center justify-content-lg-end"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div
+                class="avatar-circle position-relative rounded-circle border border-2 border-slate-800 overflow-hidden shadow-lg"
+              >
+                <img
+                  src="assets/images/my_image.jpg"
+                  alt="My Profile Picture"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT ME SECTION -->
+      <section
+        id="about"
+        class="py-5 bg-bgSecondary position-relative overflow-hidden"
+      >
+        <div class="container py-5">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2
+              class="text-uppercase tracking-widest text-primary fs-6 fw-semibold mb-2"
+            >
+              Introduction
+            </h2>
+            <p class="display-5 fw-extrabold text-white">About Me</p>
+            <div class="divider bg-primary mx-auto rounded-pill"></div>
+          </div>
+
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-6 text-slate lead fs-6" data-aos="fade-right">
+              <p class="mb-4">
+                Currently pursuing my Bachelor of Science in Information &
+                Communication Engineering (ICE) at
+                <strong class="text-white"
+                  >Bangladesh University of Professionals (BUP)</strong
+                >. My academic journey is fueled by a passion for creating
+                robust digital ecosystems and understanding the intricacies of
+                modern data communication.
+              </p>
+              <p class="mb-4">
+                I specialize in software engineering principles, protocol
+                analysis, and full-stack development, utilizing semantic code
+                and scalable architectures. I approach problem-solving with an
+                engineering mindset, prioritizing optimization, accessibility,
+                and clean implementation.
+              </p>
+              <p class="text-slate-500 mb-0">
+                My career objective is to secure an impactful internship or
+                entry-level software engineering role where I can contribute to
+                meaningful technical solutions while advancing my domain
+                expertise.
+              </p>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <div
+                    class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                  >
+                    <i
+                      class="fa-solid fa-graduation-cap fs-2 text-primary mb-3"
+                    ></i>
+                    <h3 class="h5 font-semibold text-white">Degree Program</h3>
+                    <p class="text-slate small mb-1">
+                      B.Sc. in Information & Communication Engineering (ICE)
+                    </p>
+                    <p class="text-slate-500 x-small mb-0">
+                      BUP | Dhaka, Bangladesh
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div
+                    class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                  >
+                    <i
+                      class="fa-solid fa-map-location-dot fs-2 text-primary mb-3"
+                    ></i>
+                    <h3 class="h5 font-semibold text-white">Location</h3>
+                    <p class="text-slate small mb-1">Dhaka, Bangladesh</p>
+                    <p class="text-slate-500 x-small mb-0">
+                      Open to remote/relocation
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div
+                    class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                  >
+                    <i
+                      class="fa-solid fa-network-wired fs-2 text-primary mb-3"
+                    ></i>
+                    <h3 class="h5 font-semibold text-white">Primary Focus</h3>
+                    <p class="text-slate small mb-0">
+                      Software Engineering & Machine Learning Protocol
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div
+                    class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                  >
+                    <i class="fa-solid fa-code fs-2 text-primary mb-3"></i>
+                    <h3 class="h5 font-semibold text-white">Competencies</h3>
+                    <p class="text-slate small mb-0">
+                      System Design, Troubleshooting, Semantic UI
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS & CORE FOCUS SECTION -->
+      <section
+        id="skills"
+        class="py-5 bg-bgPrimary position-relative overflow-hidden"
+      >
+        <div class="container py-5">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2
+              class="text-uppercase tracking-widest text-primary fs-6 fw-semibold mb-2"
+            >
+              Technical Proficiency
+            </h2>
+            <p class="display-5 fw-extrabold text-white">
+              Skills & Domain Expertise
+            </p>
+            <div class="divider bg-primary mx-auto rounded-pill"></div>
+          </div>
+
+          <div class="mb-5" data-aos="fade-up">
+            <h3
+              class="h4 font-bold text-white mb-4 d-flex align-items-center gap-2"
+            >
+              <i class="fa-solid fa-brain text-primary"></i>
+              Machine Learning, AI &amp; Cloud Infrastructure
+            </h3>
+
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div
+                  class="glass-panel p-4 rounded-3 border border-slate-800 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <div
+                      class="icon-box rounded-2 bg-primary-subtle text-primary border border-primary-subtle d-flex align-items-center justify-content-center mb-3"
+                    >
+                      <i class="fa-solid fa-robot fs-5"></i>
+                    </div>
+                    <h4 class="h5 font-semibold text-white mb-2">
+                      Machine Learning &amp; AI
+                    </h4>
+                    <p class="small text-slate mb-3">
+                      Model building, Computer Vision, and NLP workflows using
+                      modern frameworks and metrics evaluation.
+                    </p>
+                    <ul class="list-unstyled small text-slate mb-3 space-y-1">
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>ML Libraries:</strong> Scikit-Learn,
+                        TensorFlow, PyTorch, Keras
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>Specializations:</strong> OpenCV, NLP Basics
+                        (NLTK, spaCy)
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>Evaluation:</strong> Accuracy, Precision,
+                        Recall, F1-Score
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex flex-wrap gap-1 mt-auto">
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Python</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >TensorFlow</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >PyTorch</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >OpenCV</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div
+                  class="glass-panel p-4 rounded-3 border border-slate-800 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <div
+                      class="icon-box rounded-2 bg-primary-subtle text-primary border border-primary-subtle d-flex align-items-center justify-content-center mb-3"
+                    >
+                      <i class="fa-solid fa-cloud-arrow-up fs-5"></i>
+                    </div>
+                    <h4 class="h5 font-semibold text-white mb-2">
+                      Data &amp; Cloud Infrastructure
+                    </h4>
+                    <p class="small text-slate mb-3">
+                      Deploying scalable model API endpoints, containerization,
+                      and managing cloud storage setups.
+                    </p>
+                    <ul class="list-unstyled small text-slate mb-3 space-y-1">
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>Cloud Platforms:</strong> AWS, Azure, Google
+                        Cloud
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>DevOps &amp; APIs:</strong> Docker, Kubernetes,
+                        RESTful APIs
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>Pipelines &amp; DB:</strong> CI/CD, SQL, NoSQL
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex flex-wrap gap-1 mt-auto">
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >GCP</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Docker</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >REST APIs</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >SQL/NoSQL</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div
+                  class="glass-panel p-4 rounded-3 border border-slate-800 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <div
+                      class="icon-box rounded-2 bg-primary-subtle text-primary border border-primary-subtle d-flex align-items-center justify-content-center mb-3"
+                    >
+                      <i class="fa-solid fa-list-check fs-5"></i>
+                    </div>
+                    <h4 class="h5 font-semibold text-white mb-2">
+                      Tools &amp; Workflows
+                    </h4>
+                    <p class="small text-slate mb-3">
+                      Interactive development, model experimentation tracking,
+                      and Unix terminal automation.
+                    </p>
+                    <ul class="list-unstyled small text-slate mb-3 space-y-1">
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>Notebooks:</strong> Jupyter Notebook, Google
+                        Colab
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>Environments:</strong> VS Code, Linux Terminal
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-angle-right text-primary me-2"></i
+                        ><strong>Version Control:</strong> Git &amp; GitHub
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex flex-wrap gap-1 mt-auto">
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Jupyter</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Google Colab</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Git</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Linux</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3
+              class="h4 font-bold text-white mb-4 d-flex align-items-center gap-2"
+            >
+              <i class="fa-solid fa-code text-primary"></i>
+              Software Engineering & Development Tech Stack
+            </h3>
+
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-3">
+                <div
+                  class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                >
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="fa-solid fa-terminal text-primary"></i>
+                    <h4 class="h6 font-semibold text-white mb-0">Languages</h4>
+                  </div>
+                  <ul class="list-unstyled mb-0 small text-slate space-y-2">
+                    <li>
+                      <i class="fa-brands fa-js text-warning me-2"></i>
+                      JavaScript (ES6+)
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-c text-info me-2"></i> C / C++
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-python text-primary me-2"></i>
+                      Python
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-html5 text-danger me-2"></i> HTML5
+                      & CSS3
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <div
+                  class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                >
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="fa-solid fa-laptop-code text-primary"></i>
+                    <h4 class="h6 font-semibold text-white mb-0">
+                      Web Technologies
+                    </h4>
+                  </div>
+                  <ul class="list-unstyled mb-0 small text-slate space-y-2">
+                    <li>
+                      <i class="fa-brands fa-bootstrap text-purple me-2"></i>
+                      Bootstrap 5.3
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-mobile-screen text-success me-2"
+                      ></i>
+                      Responsive Design
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-cubes text-info me-2"></i> DOM
+                      Manipulation
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-universal-access text-light me-2"
+                      ></i>
+                      Web Accessibility
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <div
+                  class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                >
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="fa-solid fa-screwdriver-wrench text-primary"></i>
+                    <h4 class="h6 font-semibold text-white mb-0">
+                      Tools & Workflows
+                    </h4>
+                  </div>
+                  <ul class="list-unstyled mb-0 small text-slate space-y-2">
+                    <li>
+                      <i class="fa-brands fa-git-alt text-danger me-2"></i> Git
+                      & GitHub
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code text-primary me-2"></i> VS Code
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-linux text-light me-2"></i> Linux
+                      Terminal
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-list-check text-success me-2"></i>
+                      Agile / Scrum Basics
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <div
+                  class="glass-panel p-4 rounded-3 border border-slate-800 h-100"
+                >
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="fa-solid fa-brain text-primary"></i>
+                    <h4 class="h6 font-semibold text-white mb-0">
+                      Engineering Practices
+                    </h4>
+                  </div>
+                  <ul class="list-unstyled mb-0 small text-slate space-y-2">
+                    <li>
+                      <i class="fa-solid fa-circle-check text-primary me-2"></i>
+                      Problem Solving
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check text-primary me-2"></i>
+                      Documentation
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check text-primary me-2"></i>
+                      Troubleshooting
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check text-primary me-2"></i>
+                      Collaborative Coding
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS SECTION -->
+      <section
+        id="projects"
+        class="py-5 bg-bgSecondary position-relative overflow-hidden"
+      >
+        <section
+          id="projects"
+          class="py-5 bg-bgSecondary position-relative overflow-hidden"
+        >
+          <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+              <h2
+                class="text-uppercase tracking-widest text-primary fs-6 fw-semibold mb-2"
+              >
+                Portfolio
+              </h2>
+              <p class="display-5 fw-extrabold text-white">Featured Projects</p>
+              <div class="divider bg-primary mx-auto rounded-pill"></div>
+            </div>
+
+            <div id="projects-grid" class="row g-4">
+              <div class="col-md-6" data-aos="fade-up">
+                <div
+                  class="glass-panel rounded-3 p-4 border border-slate-800 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-3"
+                    >
+                      <span
+                        class="x-small fw-semibold text-primary text-uppercase tracking-wider"
+                        >Web Application</span
+                      >
+                      <div class="d-flex align-items-center gap-3 fs-5">
+                        <a
+                          href="https://github.com/kaziratul3200/CourierPro-Smart-Courier-Tracking-Management-System/tree/main/courierpro_-smart-courier-tracking-management-system"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-slate hover-white"
+                          aria-label="GitHub Repository"
+                        >
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a
+                          href="https://courierpro-demo.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-slate hover-primary"
+                          aria-label="Live Demo"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fs-6"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <h3 class="h4 font-bold text-white mb-2">CourierPro</h3>
+                    <p class="text-slate small mb-4">
+                      A complete delivery and courier tracking system featuring
+                      role-based dashboards, package state management, and
+                      real-time status updating.
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap gap-2 pt-2 border-top border-slate-800"
+                  >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >HTML</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >CSS</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Bootstrap</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Node.js</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div
+                  class="glass-panel rounded-3 p-4 border border-slate-800 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-3"
+                    >
+                      <span
+                        class="x-small fw-semibold text-primary text-uppercase tracking-wider"
+                        >Frontend Site</span
+                      >
+                      <div class="d-flex align-items-center gap-3 fs-5">
+                        <a
+                          href="https://github.com/kaziratul3200/Webtech-Bootstrap-CSS-Project"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-slate hover-white"
+                          aria-label="GitHub Repository"
+                        >
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a
+                          href="https://velocitymotor-demo.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-slate hover-primary"
+                          aria-label="Live Demo"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fs-6"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <h3 class="h4 font-bold text-white mb-2">Velocity Motor</h3>
+                    <p class="text-slate small mb-4">
+                      A sleek, responsive automotive platform showcasing vehicle
+                      models, custom specs configurations, and interactive user
+                      booking options.
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap gap-2 pt-2 border-top border-slate-800"
+                  >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >HTML</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >CSS</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Bootstrap 5</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div
+                  class="glass-panel rounded-3 p-4 border border-slate-800 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-3"
+                    >
+                      <span
+                        class="x-small fw-semibold text-primary text-uppercase tracking-wider"
+                        >Algorithm Simulator</span
+                      >
+                      <div class="d-flex align-items-center gap-3 fs-5">
+                        <a
+                          href="https://cpu-scheduling-simulator.lovable.app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-slate hover-primary"
+                          aria-label="Live Demo"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fs-6"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <h3 class="h4 font-bold text-white mb-2">
+                      CPU Scheduling Simulator
+                    </h3>
+                    <p class="text-slate small mb-4">
+                      An interactive visual tool simulating operating system CPU
+                      scheduling algorithms (FCFS, SJF, Round Robin) with
+                      dynamic Gantt charts.
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap gap-2 pt-2 border-top border-slate-800"
+                  >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >CSS</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Python</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div
+                  class="glass-panel rounded-3 p-4 border border-slate-800 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-3"
+                    >
+                      <span
+                        class="x-small fw-semibold text-primary text-uppercase tracking-wider"
+                        >EdTech Platform</span
+                      >
+                      <div class="d-flex align-items-center gap-3 fs-5">
+                        <a
+                          href="https://github.com/yourusername/ED-TECH-SOLUTION-PROJECT"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-slate hover-white"
+                          aria-label="GitHub Repository"
+                        >
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <h3 class="h4 font-bold text-white mb-2">
+                      ED-TECH-SOLUTION-PROJECT
+                    </h3>
+                    <p class="text-slate small mb-4">
+                      A modern educational web platform with structured learning
+                      modules, global state management for course progress, and
+                      custom UI components.
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap gap-2 pt-2 border-top border-slate-800"
+                  >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >React.js</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Tailwind CSS</span
+                    >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700"
+                      >Redux Toolkit</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- BOOTSTRAP NATIVE MODAL -->
+      <div
+        class="modal fade"
+        id="projectModal"
+        tabindex="-1"
+        aria-labelledby="projectModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div
+            class="modal-content glass-modal border border-slate-700 text-white"
+          >
+            <div class="modal-header border-bottom border-slate-800">
+              <h5 class="modal-title font-bold" id="projectModalLabel">
+                Project Details
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-4" id="modal-body">
+              <!-- Dynamic JavaScript Content -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION & EXPERIENCE TIMELINE -->
+      <section
+        id="education"
+        class="py-5 bg-bgPrimary position-relative overflow-hidden"
+      >
+        <div class="container py-5">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2
+              class="text-uppercase tracking-widest text-primary fs-6 fw-semibold mb-2"
+            >
+              Milestones
+            </h2>
+            <p class="display-5 fw-extrabold text-white">
+              Education & Achievements
+            </p>
+            <div class="divider bg-primary mx-auto rounded-pill"></div>
+          </div>
+
+          <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h3
+                class="h4 font-bold text-white mb-4 d-flex align-items-center gap-2"
+              >
+                <i class="fa-solid fa-graduation-cap text-primary"></i>
+                Academic Track
+              </h3>
+
+              <div
+                class="timeline-container border-start border-2 border-slate-800 ps-4 space-y-4"
+              >
+                <div class="timeline-item position-relative">
+                  <div class="timeline-node bg-primary position-absolute"></div>
+                  <div
+                    class="glass-panel p-4 rounded-3 border border-slate-800"
+                  >
+                    <span
+                      class="badge bg-primary-subtle text-primary border border-primary-subtle mb-2"
+                      >Undergraduate</span
+                    >
+                    <h4 class="h5 font-bold text-white">
+                      B.Sc. in Information & Communication Engineering
+                    </h4>
+                    <p class="small text-slate fw-medium mb-1">
+                      Bangladesh University of Professionals (BUP)
+                    </p>
+                    <p class="x-small text-slate-500 mb-3">
+                      <i class="fa-regular fa-calendar me-1"></i> 2022 - Present
+                      | Dhaka, Bangladesh
+                    </p>
+                    <p class="small text-slate mb-3">
+                      Focusing on Data Communications, Software Architecture,
+                      Wireless Networks, Signal Processing, and System
+                      Optimization.
+                    </p>
+                    <div>
+                      <h5
+                        class="x-small fw-semibold text-slate text-uppercase tracking-wider mb-2"
+                      >
+                        Key Coursework:
+                      </h5>
+                      <div class="d-flex flex-wrap gap-1">
+                        <span
+                          class="badge bg-slate-800 text-slate border border-slate-700"
+                          >Data Structures & Algorithms</span
+                        >
+                        <span
+                          class="badge bg-slate-800 text-slate border border-slate-700"
+                          >Database Management Systems</span
+                        >
+                        <span
+                          class="badge bg-slate-800 text-slate border border-slate-700"
+                          >Software & Requirement Engineering</span
+                        >
+                        <span
+                          class="badge bg-slate-800 text-slate border border-slate-700"
+                          >Web Technology</span
+                        >
+                        <span
+                          class="badge bg-slate-800 text-slate border border-slate-700"
+                          >Machine Learning</span
+                        >
+                        <span
+                          class="badge bg-slate-800 text-slate border border-slate-700"
+                          >Artificial Intelligent(AI)</span
+                        >
+                        <span
+                          class="badge bg-slate-800 text-slate border border-slate-700"
+                          >Cloud Engineering</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-item position-relative">
+                  <div
+                    class="timeline-node bg-slate-600 position-absolute"
+                  ></div>
+                  <div
+                    class="glass-panel p-4 rounded-3 border border-slate-800"
+                  >
+                    <span
+                      class="badge bg-slate-800 text-slate border border-slate-700 mb-2"
+                      >Higher Secondary</span
+                    >
+                    <h4 class="h5 font-bold text-white">
+                      Higher Secondary Certificate (HSC)
+                    </h4>
+                    <p class="small text-slate fw-medium mb-1">Science Group</p>
+                    <p class="x-small text-slate-500 mb-2">
+                      <i class="fa-regular fa-calendar me-1"></i> Completed
+                    </p>
+                    <p class="small text-slate mb-0">
+                      Achieved GPA 5.00/5.00 with focus on Physics, Mathematics,
+                      and Chemistry.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+              <h3
+                class="h4 font-bold text-white mb-4 d-flex align-items-center gap-2"
+              >
+                <i class="fa-solid fa-trophy text-primary"></i>
+                Achievements & Leadership
+              </h3>
+
+              <div
+                class="timeline-container border-start border-2 border-slate-800 ps-4 space-y-4"
+              >
+                <div class="timeline-item position-relative">
+                  <div class="timeline-node bg-primary position-absolute"></div>
+                  <div
+                    class="glass-panel p-4 rounded-3 border border-slate-800"
+                  >
+                    <span
+                      class="badge bg-warning-subtle text-warning border border-warning-subtle mb-2"
+                    >
+                      <i class="fa-solid fa-award me-1"></i> Competition /
+                      Hackathon
+                    </span>
+                    <h4 class="h5 font-bold text-white">
+                      Tech Competition Participant
+                    </h4>
+                    <p class="x-small text-slate-500 mb-2">
+                      <i class="fa-regular fa-calendar me-1"></i> 2024
+                    </p>
+                    <p class="small text-slate mb-0">
+                      Demonstrated technical problem-solving by designing
+                      prototype engineering solutions under strict timing
+                      constraints.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section
+        id="contact"
+        class="py-5 bg-bgSecondary position-relative overflow-hidden"
+      >
+        <div class="container py-5">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2
+              class="text-uppercase tracking-widest text-primary fs-6 fw-semibold mb-2"
+            >
+              Get In Touch
+            </h2>
+            <p class="display-5 fw-extrabold text-white">Contact & Outreach</p>
+            <div class="divider bg-primary mx-auto rounded-pill"></div>
+          </div>
+
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5" data-aos="fade-right">
+              <div
+                class="glass-panel p-4 rounded-3 border border-slate-800 mb-4"
+              >
+                <h3 class="h4 font-bold text-white mb-3">Let's Connect</h3>
+                <p class="text-slate small leading-relaxed mb-0">
+                  I am actively seeking software engineering internships,
+                  research opportunities, and technical collaborations. Feel
+                  free to reach out via email or connect on social platforms!
+                </p>
+              </div>
+
+              <div
+                class="glass-panel p-3 rounded-3 border border-slate-800 d-flex align-items-center gap-3 mb-3"
+              >
+                <div
+                  class="contact-icon-box rounded-2 bg-primary-subtle text-primary border border-primary-subtle d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-envelope fs-5"></i>
+                </div>
+                <div>
+                  <h4
+                    class="x-small text-uppercase font-semibold text-slate-500 tracking-wider mb-0"
+                  >
+                    Personal Email
+                  </h4>
+                  <a
+                    href="mailto:kaziratul3100@gmail.com"
+                    class="text-white text-decoration-none hover-primary small font-medium"
+                    >kaziratul3100@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="glass-panel p-3 rounded-3 border border-slate-800 d-flex align-items-center gap-3 mb-3"
+              >
+                <div
+                  class="contact-icon-box rounded-2 bg-primary-subtle text-primary border border-primary-subtle d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-location-dot fs-5"></i>
+                </div>
+                <div>
+                  <h4
+                    class="x-small text-uppercase font-semibold text-slate-500 tracking-wider mb-0"
+                  >
+                    Institution & Location
+                  </h4>
+                  <p class="text-white small font-medium mb-0">
+                    BUP | Mirpur-12, Dhaka, Bangladesh
+                  </p>
+                </div>
+              </div>
+
+              <div class="glass-panel p-3 rounded-3 border border-slate-800">
+                <h4
+                  class="x-small text-uppercase font-semibold text-slate-500 tracking-wider mb-2"
+                >
+                  Professional Profiles
+                </h4>
+                <div class="d-flex align-items-center gap-2">
+                  <a
+                    href="https://www.linkedin.com/in/kazi-minhajul-islam-6ba52621a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-dark btn-sm rounded-2 text-slate hover-white"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fa-brands fa-linkedin-in fs-5"></i>
+                  </a>
+                  <a
+                    href="https://github.com/kaziratul3200"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-dark btn-sm rounded-2 text-slate hover-white"
+                    aria-label="GitHub"
+                  >
+                    <i class="fa-brands fa-github fs-5"></i>
+                  </a>
+                  <a
+                    href="mailto:kaziratul3100@gmail.com"
+                    class="btn btn-dark btn-sm rounded-2 text-slate hover-white"
+                    aria-label="Email"
+                  >
+                    <i class="fa-solid fa-at fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+              <div
+                class="glass-panel p-4 p-md-5 rounded-4 border border-slate-800"
+              >
+                <h3 class="h4 font-bold text-white mb-4">Send a Message</h3>
+
+                <form id="contact-form" class="space-y-3">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label
+                        for="name"
+                        class="form-label x-small font-semibold text-uppercase text-slate-400"
+                        >Your Name *</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="John Doe"
+                        class="form-control bg-bgPrimary border-slate-700 text-white placeholder-slate"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                        for="email"
+                        class="form-label x-small font-semibold text-uppercase text-slate-400"
+                        >Your Email *</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="john@example.com"
+                        class="form-control bg-bgPrimary border-slate-700 text-white placeholder-slate"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-3">
+                    <label
+                      for="subject"
+                      class="form-label x-small font-semibold text-uppercase text-slate-400"
+                      >Subject *</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      required
+                      placeholder="Inquiry regarding Internship / Collaboration"
+                      class="form-control bg-bgPrimary border-slate-700 text-white placeholder-slate"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <label
+                      for="message"
+                      class="form-label x-small font-semibold text-uppercase text-slate-400"
+                      >Message *</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      placeholder="Hi, I saw your ICE development portfolio..."
+                      class="form-control bg-bgPrimary border-slate-700 text-white placeholder-slate"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    id="submit-btn"
+                    class="btn btn-primary w-100 py-3 fw-semibold mt-4 d-flex align-items-center justify-content-center gap-2"
+                  >
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-paper-plane small"></i>
+                  </button>
+
+                  <div
+                    id="form-feedback"
+                    class="d-none alert mt-3 text-center small font-medium mb-0"
+                    role="alert"
+                  ></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating Scroll-To-Top Button -->
+    <button
+      id="scroll-top-btn"
+      type="button"
+      aria-label="Scroll to top"
+      class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 z-3 d-none shadow-lg"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Minimalist Footer -->
+    <footer
+      id="footer"
+      class="py-4 bg-bgPrimary border-top border-slate-800 text-slate x-small"
+    >
+      <div
+        class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3 text-center text-sm-start"
+      >
+        <p class="mb-0">&copy; 2026 ICE Undergraduate | All Rights Reserved</p>
+        <div class="d-flex align-items-center gap-4">
+          <a href="#about" class="text-slate text-decoration-none hover-primary"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="text-slate text-decoration-none hover-primary"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-slate text-decoration-none hover-primary"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Local Bootstrap 5.3.3 JavaScript Bundle (Includes Popper) -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External Animation Libraries -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>
